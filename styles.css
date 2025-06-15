@@ -10,14 +10,14 @@ body {
 
 main {
     position: fixed;
-        margin-left: 35%;
+    margin-left: 35%;
     margin-top: 3%;
     text-align: center;
     background-color: rgb(72, 154, 167);
     width: 400px;
     padding: 20px;
     border-radius: 10px;
-    
+
 
 }
 
@@ -29,9 +29,9 @@ button {
     color: blue;
     font-weight: 300;
     width: 350px;
-     border-color: blue;
-   color: white;
-   background-color: blue;
+    border-color: blue;
+    color: white;
+    background-color: blue;
 }
 
 button:active {
@@ -49,12 +49,12 @@ img {
 
 input {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 30px;
     padding: 10px;
     background-color: blue;
     font-weight: 300;
     border-color: blue;
-   color: white;
+    color: white;
 
 }
