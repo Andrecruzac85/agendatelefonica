@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./scripts.js"></script>
     <title>Agenda</title>
 </head>
 
@@ -18,11 +17,36 @@
         </div>
         <h1 class="result"></h1>
         <div>
-            <button onclick="search()" class="find">Procurar Contato </button>
+            <button onclick="search()">Procurar Contato </button>
         </div>
     </main>
-    
-</body>
 
+</body>
+<script>
+    let h1 = document.querySelector ('h1') 
+    let input = document.querySelector ('input')
+    const agenda = [
+        { nome: 'Ana Silva', telefone: '(11) 91234‑5678' },
+        { nome: 'Bruno Costa', telefone: '(21) 99876‑5432' },
+        { nome: 'Carla Souza', telefone: '(31) 98765‑4321' },
+        { nome: 'Diego Lima', telefone: '(41) 97654‑3210' }
+    ];
+
+    function search() {
+        let i = 0
+        while (agenda.length) {
+            
+         {
+            if (input.value === agenda[i].nome) {
+                h1.innerHTML = `Nome: ${agenda[i].nome} - Telefone: ${agenda[i].telefone}`
+                break
+            } else {
+                h1.innerHTML = 'Contato não encontrado.'
+
+            }
+        }
+        }
+        }
+</script>
 
 </html>

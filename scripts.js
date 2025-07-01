@@ -6,14 +6,16 @@ const agenda = [
 ];
 
 function search() {
-  const username = document.querySelector('.name').value.toLowerCase();
-  const resultado = document.querySelector('.result');
+  
+   for (let i = 0; i < agenda.length; i++) {
+    
+    
 
-  const contato = agenda.find(c => c.nome.toLowerCase().includes(username));
-
-  if (contato) {
-    resultado.innerText = `Nome: ${contato.nome} - Telefone: ${contato.telefone}`;
+  if (input.value === agenda[i].name) {
+    resultado.innerHTML = `Nome: ${contato.nome} - Telefone: ${contato.telefone}`;
   } else {
-    resultado.innerText = 'Contato não encontrado.';
+    resultado.innerHTML = 'Contato não encontrado.';
+    break;
   }
+}
 }
